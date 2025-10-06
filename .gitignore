@@ -1,51 +1,200 @@
-# Create .gitignore in project root
-@"
-# Python
-__pycache__/
-*.pyc
-*.pyo
-.Python
-*.so
-
-# Virtual environments
+# ============================================
+# Python Backend
+# ============================================
+# Virtual Environment
 .venv/
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
-# Environment variables - NEVER COMMIT!
-.env
-.env.local
-backend/.env
-frontend/.env
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
 
-# Node modules
-node_modules/
-
-# Build directories
+# Python Build
+*.so
+*.egg
+*.egg-info/
 dist/
 build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
 
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
+# Environment Variables - CRITICAL: Never commit!
+.env
+.env.local
+.env.*.local
+.envrc
+backend/.env
 
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
 # Logs
 *.log
 logs/
+pip-log.txt
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 
+# ============================================
+# Node.js / React Frontend
+# ============================================
+# Dependencies
+node_modules/
+.npm/
+.pnp/
+.pnp.js
+
+# Production Build
+dist/
+build/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+
+# Debug & Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+
+# Misc
+.DS_Store
+*.pem
+
+# ============================================
+# IDEs & Editors
+# ============================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# Project Specific
+# ============================================
 # Backup files
 *.bak
-"@ | Out-File -FilePath .gitignore -Encoding utf8
+*.backup
+*.old
+*_backup.*
+
+# Temp files
+*.tmp
+*.temp
+.temp/
+
+# Documentation builds
+docs/_build/
+site/
+
+# ============================================
+# AI & Development Tools
+# ============================================
+# Cursor
+.cursorignore
+.cursorindexingignore
+
+# GitHub Copilot
+.copilot/
+
+# ============================================
+# Security & Secrets
+# ============================================
+# Never commit these!
+*.key
+*.pem
+*.p12
+secrets.json
+credentials.json
+
+# ============================================
+# Optional: Uncomment if needed
+# ============================================
+# TypeScript
+# *.tsbuildinfo
+
+# ESLint
+# .eslintcache
+
+# Prettier
+# .prettierignore
