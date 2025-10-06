@@ -1,0 +1,51 @@
+# Create .gitignore in project root
+@"
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables - NEVER COMMIT!
+.env
+.env.local
+backend/.env
+frontend/.env
+
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+"@ | Out-File -FilePath .gitignore -Encoding utf8
