@@ -2,6 +2,10 @@
 # Python Backend
 # ============================================
 # Virtual Environment
+# ============================================
+# Python Backend
+# ============================================
+# Virtual Environment
 .venv/
 venv/
 env/
@@ -33,13 +37,50 @@ sdist/
 var/
 wheels/
 *.whl
+env.bak/
+venv.bak/
 
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Python Build
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+
+# Environment Variables - CRITICAL: Never commit!
 # Environment Variables - CRITICAL: Never commit!
 .env
 .env.local
 .env.*.local
 .envrc
+.env.*.local
+.envrc
 backend/.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
 # Testing
 .pytest_cache/
@@ -52,12 +93,107 @@ htmlcov/
 *.log
 logs/
 pip-log.txt
+pip-log.txt
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 
+# ============================================
+# Node.js / React Frontend
+# ============================================
+# Dependencies
+node_modules/
+.npm/
+.pnp/
+.pnp.js
+
+# Production Build
+dist/
+build/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+
+# Debug & Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+
+# Misc
+.DS_Store
+*.pem
+
+# ============================================
+# IDEs & Editors
+# ============================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# Project Specific
+# ============================================
 # ============================================
 # Node.js / React Frontend
 # ============================================
