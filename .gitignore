@@ -334,3 +334,4 @@ credentials.json
 
 # Prettier
 # .prettierignore
+.vercel

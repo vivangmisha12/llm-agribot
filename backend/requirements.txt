@@ -1,0 +1,32 @@
+# FastAPI framework and ASGI server
+fastapi==0.115.0
+uvicorn==0.30.1
+
+# HTTP requests and API handling
+requests==2.31.0
+httpx==0.27.0
+
+# Data validation and serialization
+pydantic==2.7.4
+pydantic-core==2.18.4
+
+# CORS middleware for frontend-backend communication
+starlette==0.37.2
+python-multipart==0.0.9
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# Model integration (optional but useful)
+transformers==4.44.2
+torch==2.3.0
+huggingface-hub==0.23.1
+
+# For Anthropic / Claude API integration (optional)
+anthropic==0.25.6
+
+# If you use OpenAI fallback
+openai==1.37.0
+
+# JSON utilities and formatting
+orjson==3.10.3
